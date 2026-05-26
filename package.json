@@ -1,0 +1,59 @@
+{
+  "name": "@snowball-bot/repost-adapter",
+  "version": "1.0.0",
+  "description": "Contract package for snowball3 repost adapter plugins",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.ts",
+        "require": "./dist/index.d.cts"
+      },
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "pnpm build",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "snowball3",
+    "repost",
+    "adapter",
+    "plugin",
+    "contract"
+  ],
+  "author": "Rominwolf",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowball-bot-service/repost-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/snowball-bot-service/repost-adapter/issues"
+  },
+  "homepage": "https://github.com/snowball-bot-service/repost-adapter#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsup": "^8.5.1",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
