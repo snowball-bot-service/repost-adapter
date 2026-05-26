@@ -17,7 +17,7 @@ export interface RequesterPayload {
  */
 export interface AuthorPayload {
   /**
-   * 用户 QQ 号
+   * 作者 ID
    */
   userId?: string;
   /**

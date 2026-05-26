@@ -1,0 +1,21 @@
+{
+  "name": "repost-adapter-echo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Example adapter showing how to implement @snowball-bot/repost-adapter",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@snowball-bot/repost-adapter": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.0",
+    "vitest": "^2.0.0"
+  }
+}

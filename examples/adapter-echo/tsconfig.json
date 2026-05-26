@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2020"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "ignoreDeprecations": "6.0"
+  },
+  "include": [
+    "src/**/*",
+    "../../node_modules/.pnpm/@types+node@25.9.1/node_modules/@types/node/web-globals/url.d.ts"
+  ],
+  "exclude": ["node_modules", "dist", "test"]
+}

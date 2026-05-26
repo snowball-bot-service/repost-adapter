@@ -52,6 +52,11 @@ const adapter: Adapter = {
 export default adapter;
 ```
 
+## Examples
+
+- [`examples/echo-adapter`](./examples/echo-adapter) — A minimal echo adapter
+  showing how to implement the contract. Use as a starting template.
+
 ## Versioning
 
 This package follows Semantic Versioning. Breaking changes to the contract
