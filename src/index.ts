@@ -1,9 +1,13 @@
-export type { SocialProvider } from './provider';
-export type { AdapterManifest } from './manifest';
+export type { SocialProvider, ProviderInfo, ProviderBilling } from './provider';
+export type { AdapterManifest, AdapterName } from './manifest';
 export type {
   RepostAdapterRequestParams,
   RepostAdapterResponsePayload,
-  RepostHandler
+  RepostHandler,
+  BaseRepostAdapterResponsePayload,
+  RepostMethod,
+  RepostBadgeParams,
+  NextProcessInfo,
 } from './handler';
 export type { Helper } from './helper';
 export type { AdapterContext, AdapterEvent, ILogger } from './context';
