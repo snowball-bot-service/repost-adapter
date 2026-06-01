@@ -22,9 +22,10 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsup",
+    "pre": "pnpm dlx publint",
+    "build": "pnpm build",
+    "publish": "pnpm publish --access public",
     "dev": "tsup --watch",
-    "prepublishOnly": "pnpm build",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [
