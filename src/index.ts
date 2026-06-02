@@ -1,16 +1,9 @@
-export type { SocialProvider, ProviderInfo, ProviderBilling } from './provider';
-export type { AdapterManifest, AdapterName } from './manifest';
-export type {
-  RepostAdapterRequestParams,
-  RepostAdapterResponsePayload,
-  RepostHandler,
-  BaseRepostAdapterResponsePayload,
-  RepostMethod,
-  RepostBadgeParams,
-  NextProcessInfo,
-} from './handler';
-export type { Helper } from './helper';
-export type { AdapterContext, AdapterEvent, ILogger } from './context';
+export type * from './provider';
+export type * from './manifest';
+export type * from './handler';
+export type * from './helper';
+export type * from './context';
+export type * from "./error";
 
 /**
  * 适配器接口。所有 adapter 必须导出符合此结构的对象。
