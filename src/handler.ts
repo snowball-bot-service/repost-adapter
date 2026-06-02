@@ -131,7 +131,7 @@ export interface BaseRepostAdapterResponsePayload {
   /**
    * 公开时间
    */
-  publishAt: Date;
+  publishAt?: Date;
 
   /**
    * 作者信息
