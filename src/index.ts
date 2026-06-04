@@ -3,9 +3,9 @@ export type * from './manifest';
 export type * from './handler';
 export type * from './helper';
 export type * from './context';
-export type * from "./error";
 export type * from "./repost";
 export type * from "./process";
+export * from "./error";
 
 /**
  * 适配器接口。所有 adapter 必须导出符合此结构的对象。
@@ -24,4 +24,4 @@ export interface Adapter {
 /**
  * 契约包版本号（用于运行时检测）
  */
-export const CONTRACT_VERSION = 2 as const;
+export const CONTRACT_VERSION = 8 as const;
