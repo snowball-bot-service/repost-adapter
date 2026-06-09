@@ -12,5 +12,20 @@ run/
 .tsbuildinfo
 .tsbuildinfo.*
 tools/
+
+# 误跑 tsc（未设 outDir/noEmit）时散落在源码目录的编译产物
+# 真正的构建产物只应在 dist/，src 下的 .js/.d.ts 一律忽略
+src/**/*.js
+src/**/*.cjs
+src/**/*.d.ts
+src/**/*.d.cts
+src/**/*.js.map
+examples/**/*.js
+examples/**/*.cjs
+examples/**/*.d.ts
+examples/**/*.d.cts
+examples/**/*.js.map
+tsup.config.js
+tsup.config.d.ts
 public/uploads/*.*
 *.tgz

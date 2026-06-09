@@ -1,6 +1,6 @@
 {
   "name": "@snowball-bot/repost-adapter",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Contract package for snowball3 repost adapter plugins",
   "type": "module",
   "main": "./dist/index.js",
@@ -22,8 +22,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "pre": "pnpm dlx publint",
     "build": "tsup",
+    "lint": "pnpm dlx publint",
     "publish": "pnpm publish --access public",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit"

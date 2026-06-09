@@ -1,5 +1,6 @@
 import {RequesterPayload} from "./requester";
 import {SocialProvider} from "./provider";
+import {RepostMethod} from "./repost";
 
 /**
  * 进程代号
@@ -56,6 +57,11 @@ export interface AdapterProcessRequestParams {
    * 进程代号
    */
   method: ProcessMethod;
+
+  /**
+   * 转发类型
+   */
+  repostMethod: RepostMethod;
 
   /**
    * 原数据

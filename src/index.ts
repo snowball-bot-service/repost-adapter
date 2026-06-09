@@ -24,4 +24,4 @@ export interface Adapter {
 /**
  * 契约包版本号（用于运行时检测）
  */
-export const CONTRACT_VERSION = 8 as const;
+export const CONTRACT_VERSION = 9 as const;
