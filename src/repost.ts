@@ -56,7 +56,7 @@ export interface AdapterRepostRequestParams {
 }
 
 /** 适配器返回的标准化数据 */
-export interface AdapterRepostResponsePayload extends BaseRepostAdapterResponsePayload {
+export interface AdapterRepostResponsePayload<Extra = object> extends BaseRepostAdapterResponsePayload {
   /**
    * 由 RequestParams 发送的 ULID, 传回相同的 ID
    */
@@ -117,7 +117,7 @@ export interface AdapterRepostResponsePayload extends BaseRepostAdapterResponseP
   /**
    * 适配器自定义字段
    */
-  extra?: Record<string, unknown>;
+  extra?: Extra;
 }
 
 /**

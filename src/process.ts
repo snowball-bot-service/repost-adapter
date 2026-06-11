@@ -47,7 +47,7 @@ export interface NextProcessInfo {
 }
 
 /** 进程请求事件 payload */
-export interface AdapterProcessRequestParams {
+export interface AdapterProcessRequestParams<Extra = object> {
   /**
    * 该请求的唯一 ULID, ResponsePayload 需要传回相同的 ULID 进行验证
    */
@@ -74,9 +74,14 @@ export interface AdapterProcessRequestParams {
   requester: RequesterPayload
 
   /**
-   * 额外参数
+   * 元数据
    */
   meta?: Record<string, unknown>;
+
+  /**
+   * 额外负载（由 Repost 回传而来）
+   */
+  extra?: Extra;
 }
 
 /** 适配器返回的标准化数据 */
