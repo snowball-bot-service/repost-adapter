@@ -1,6 +1,6 @@
 {
   "name": "@snowball-bot/repost-adapter",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Contract package for snowball3 repost adapter plugins",
   "type": "module",
   "main": "./dist/index.js",

@@ -165,4 +165,19 @@ export interface Helper {
    * @param params
    */
   fetchMediaFromURL: (params: FetchMediaFromUrlParams) => Promise<Buffer>,
+
+  /**
+   * 从缓存中获取数据
+   * @param field 字段
+   * @param fallback 当拿不到时的失败回调
+   */
+  cacheGet: <R = string>(field: string, fallback?: R | undefined) => Promise<R>,
+
+  /**
+   * 向缓存中录入数据
+   * @param field 字段
+   * @param value 值
+   * @param expiresAt 过期时间
+   */
+  cacheSet: <R = string>(field: string, value: R, expiresAt?: Date) => Promise<boolean>,
 }
